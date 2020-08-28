@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header class="site-header">
+   <nav>
+        <div class="logo">
+
+			<h1><a href="{% url 'home' %}">Indian Academy Tuitions</a> </h1>
+	    </div>
+
+		<div class="menu">
+		    <ul>
+			    <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'register' %}">Registration</a></li>
+				<li><a href="{% url 'gallery' %}">Gallery</a></li>
+				<li><a href="{% url 'about' %}">About us</a></li>
+				<li><a href="{% url 'contact' %}">Contact us</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+   {% block content %}
+
+
+    {% endblock %}
+
+</header>
+<div class="footer">
+  <p>© Indian Academy Tuitions, All rights reserved. </p>
+</div>
+</body>
+</html>

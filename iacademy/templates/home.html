@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+       <section>
+               <div class="leftside"><img src="{% static 'images/logo-1.jpg' %}"></div>
+                     <div class="rightside">
+	                      <h1>No.1 Institute</h1>
+	                      <p>We will provide better teaching to you</p>
+	                      <button>Welcome</button>
+                     </div>
+
+       </section>
+<h2>OUR INSTITUTE TOPPERS</h2>
+
+<div class="container">
+     <div class="topper">
+          <img src="{% static 'images/image-1.jpg' %}" alt="student-img">
+                <div class="desc"> Marks : 455/500</div>
+     </div>
+
+     <div class="topper">
+         <img src="{% static 'images/image-2.jpg' %}" alt="student-img">
+                <div class="desc"> Marks : 458/500</div>
+     </div>
+
+     <div class="topper">
+         <img src="{% static 'images/image-3.jpg' %}" alt="student-img">
+                <div class="desc"> Marks : 960/1000</div>
+     </div>
+
+     <div class="topper">
+         <img src="{% static 'images/image-16.jpeg' %}" alt="student-img">
+                <div class="desc"> Marks : 465/500</div>
+     </div>
+</div>
+
+{% endblock %}

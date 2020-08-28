@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+      <form action="" method="post">
+          {% csrf_token %}
+           <label for="name"><b>Name</b></label>
+           <input type="text" placeholder="Enter Name" name="t1" id="name" required>
+
+           <label for="fname"><b>Father name</b></label>
+           <input type="text" placeholder="Enter Father name" name="t2" id="fname" required>
+
+           <label for="area"><b>Area</b></label>
+           <input type="text" placeholder="Enter Your Area" name="t3" id="area" required>
+
+           <label for="cell"><b>Mobile Number</b></label>
+           <input type="text" placeholder="Enter Mobile number" name="t4" id="cell" required>
+
+           <label for="email"><b>Email</b></label>
+           <input type="text" placeholder="Enter Email" name="t5" id="email" required>
+
+           <label for="address"><b>Address</b></label>
+           <input type="text" placeholder="Enter Your Address" name="t6" id="address" required>
+           <button type="submit" class="registerbtn">Register</button>
+      </form>
+{% endblock %}

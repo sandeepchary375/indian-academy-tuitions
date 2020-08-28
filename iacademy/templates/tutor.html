@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<br><br><br>
+      <form action="" method="post">
+          <div class="containers">
+              <h1>Tutor Registration </h1><br><br>
+                <hr>
+             {% csrf_token %}
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="t1" id="name" required>
+          <label for="cell"><b>Mobile Number</b></label>
+          <input type="text" placeholder="Enter Mobile number" name="t2" id="cell" required>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="t3" id="email" required>
+          <button type="submit" class="registerbtn">Register</button>
+          </div>
+      </form>
+
+{% endblock %}

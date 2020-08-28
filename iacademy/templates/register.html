@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="register">
+       Registration for Tutors <a href="{% url 'tutor' %}">Click Here</a><br><br>
+       Registration for Students <a href="{% url 'student' %}">Click Here</a>
+</div>
+{% endblock %}
